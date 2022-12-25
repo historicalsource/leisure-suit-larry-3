@@ -1,0 +1,216 @@
+REM
+REM	LL3 pCED define file.
+REM
+REM	Last Update:	February 6, 1990
+REM
+
+
+
+REM
+REM		Control CHaracters
+REM
+
+ChainCH			^
+IgnoreCH			!
+ParamCH			%
+StatCH			`
+
+
+
+REM
+REM		Parameter reCALL means these programs autoload the latest filename:
+REM
+
+PCALL				browse
+PCALL				l
+PCALL				lsc
+PCALL				list
+PCALL				p
+PCALL				t
+PCALL				v
+PCALL				c
+PCALL				ee
+PCALL				scroll
+PCALL				smooth
+PCALL				find
+PCALL				grep
+
+
+REM
+REM		IGNORE means never repeat these commands:
+REM
+
+IGNORE			format
+
+
+
+REM
+REM		SYNonyms
+REM
+
+REM	First handle all the To Drive shortcuts:
+
+SYN ta			a:
+SYN tb			b:
+SYN tc			c:
+SYN td			d:
+SYN te			e:
+SYN tf			f:
+SYN tl			l:^cd\
+SYN tm			m:
+SYN tp			p:
+SYN ts			s:^cd\
+SYN tt			t:
+SYN tu			u:
+SYN tv			v:
+
+
+REM	Next do all the directory changers:
+
+SYN home			c:^cd\
+SYN over			cd..\%1
+SYN up			cd..
+SYN -				cd..
+SYN +				cd..\%1
+SYN =				cd..\%1
+SYN nd			c:^\tools\ncd %1>NUL
+
+SYN macro		c:^cd\brief\macros\src
+SYN batch		c:^cd\batch
+SYN doco			c:^cd\doco
+SYN dos			c:^cd\dos
+SYN dv			c:^cd\dv
+SYN fastback	c:^cd\fastback
+SYN grammar		c:^cd\grammar
+SYN ll3			c:^cd\ll3
+SYN pg			c:^cd\lsr
+SYN mouse		c:^cd\mouse
+SYN ms_word		c:^cd\ms_word
+SYN online		c:^cd\online
+SYN pc-link		c:^cd\pc-link
+SYN pckwik		c:^cd\pckwik
+SYN pck			c:^cd\pckwik
+SYN pctools		c:^cd\pctools
+SYN boot			c:^cd\reboot
+SYN reconfig	c:^cd\reboot
+SYN system		c:^cd\system
+SYN tapcis		c:^cd\tapcis
+SYN tmp			c:^cd\brief\tmp
+SYN tools		c:^cd\tools
+SYN uv			c:^cd\uv
+SYN wordfind	c:^cd\wordfind
+
+
+REM	Now load up the rest:
+
+SYN 25			uv  80x25>NUL
+SYN 34			uv  80x34>NUL
+SYN 43			uv  80x43>NUL
+SYN 60	      uv  80x60>NUL
+SYN alKeys		type c:\batch\al_keys
+SYN b				c:\brief\b -m%game%keys %1 %2 %3 %4 %5 %6 %7 %8 %9
+SYN backup		c:^cd\fastback^fb %1
+SYN c				lsc %1 %2 %3 %4 %5 %6 %7 %8 %9 -a -s -oModule>lsc.err
+SYN cache		c:\pckwik\superpck /m %1
+rem SYN cacheoff	c:\pckwik\superpck /off
+SYN cat			'!cat %1 -n>F:cat.cat^t F:cat.cat^del F:cat.cat'
+SYN check		tl^messages %1.sc>F:\%1.msg^gmk4 -B -O f:\%1.gmk f:%1.msg
+SYN clean		del *.asv^del *.tmp^del tmp.*^del *.err^del al.
+SYN clearCED	ced clear SYN^ced clear PCALL^ced clear IGNORE
+SYN compress	mirror^vopt c:^vopt d:^vopt e:^mirror
+SYN desk			c:\pctools\desktop %1 %2
+SYN d				'sd %2 %1'
+SYN d1			'sd %2/E/1 %1'
+SYN d2			'sd %2/E/2 %1'
+SYN d3			'!d %2/E/3'
+SYN d4			'sd %2/E/4/n %1'
+SYN d5			'!d %2/E/5'
+SYN d6			'sd %2/E/6/n %1'
+SYN dp			'!d %2/R/E/1'
+SYN dd			'sd %2/D/sf %1'
+SYN ds			'sd %2/B-/sf %1'
+SYN dw			'sd %2/6/sf %1'
+SYN dir			'sd %2/1/n %1'
+SYN dirs			'sd %2/1/sd %1'
+SYN dtoday		'sd %2/D/1/sf/@0 %1'
+SYN delall		echo Y|del *.*>NUL
+SYN delbackup	echo Y|del c:\brief\backup>NUL
+SYN delete		pdel %1 /p %2 %3 %4 %5 %6
+SYN dcdoff		echo AT&C1>com1:
+SYN dblprt		laserlst %1 %2 /t3>NUL
+rem SYN download	c:\ms_word\fonts\dl c:\ms_word\fonts\fonts.all -c
+SYN dx			dx/F/fc:black/bc:white/dc:blue/he:2/so:ne/p %1 %2 %3 %4
+SYN dpaint		e:^cd\dpaint^!dp e
+SYN e				exit
+SYN edCED		pushB^b c:\dos\normal.ced^popB^reCED
+SYN edlsr		pushB^b c:\tools\default.des^popB
+SYN edpath		e^keyinst^keyin #061^path=%path%
+SYN ee			easyedit %1 %2
+SYN eject		'!copy c:\dos\formfeed lpt1:'
+SYN feed			c:\pckwik\pckspl /IF
+SYN formfeed	c:\pckwik\pckspl /IF
+SYN ff			ff2 %1^&N:^cd &P
+SYN fff			fff /43 %1^&N:^cd &P
+SYN for			type c:\dos\for
+SYN format3		format a: /4<c:\dos\enter_no
+SYN format7		format b: /t:80 /n:9<c:\dos\enter_no
+SYN formata		format a:<c:\dos\enter_no
+SYN formatb		format b:<c:\dos\enter_no
+SYN fw			uv 80x25>NUL^uv courier>NUL^c:\fastwire\fw2^uv  /l>NUL
+SYN gram			e^c:\grammar\gmk4
+SYN gmk4			e^c:\grammar\gmk4 %1 %2 %3 %4 %5 %6
+SYN hangup		echo ATH0>COM1:
+SYN incver		incver c:\ll3\script\script.000 -vVersion
+SYN killa		qdr a:
+SYN killb		qdr b:
+SYN killdir		deldir %1 %2
+SYN l				list %1 %2 %3
+SYN loadLL3		ll3^e^b %1 %2 %3 %4 %5 %6 %7 %8 %9 -m%game%keys^cls
+SYN loadmt		runLL3 loadmt
+rem SYN LSL3vols	d:^cd\sierra\lsl3^sciv -d -r %1 %2^&N:^cd &P^e
+SYN md			'md %1^cd %1'
+SYN mouseOff	burnout m-
+SYN mouseOn		burnout m+
+SYN newCED		clearCED^ced LOAD %1.ced
+SYN noKeys		type c:\batch\no_keys
+SYN p				p:^pe %2 pic.%1^&N:^cd &P^e
+SYN pickup		echo ATH1>COM1:
+SYN pro			c:^cd\procomm^procomm
+SYN pushB		'!copy c:\brief\state.rst c:\brief\state.bak'
+SYN popB			'!copy c:\brief\state.bak c:\brief\state.rst'
+SYN pushdir		ppd push
+SYN popdir		ppd pop
+SYN print		'!copy %1 lpt1:'
+SYN 4print		c:\tools\4print %1 -H"$fn, $fd:__Page $cn of $cc//$fn, $fd:__Page $cn of $cc"
+SYN qd2        uv 80x25>NUL^c:^\dos\qd2^&N:^cd &P^uv /l>NUL
+SYN r				runLL3
+SYN reCED		newCED c:\dos\normal
+SYN retreive	'!copy c:\brief\backup\%1'
+SYN retrieve	'!copy c:\brief\backup\%1'
+SYN runLL3		ll3^cd script^C:\system\exe\sci -d %1 %2^&N:^cd &P^e
+SYN s				runLL3
+SYN scroll		smooth %1 /S2
+SYN setlpt		'!copy c:\epson\setup%1 lpt1'
+SYN shell		uv 80x25>NUL^c:\pctools\pcshell %1 %2^&N:^cd &P^uv /l>NUL
+SYN sidekick	c:\sidekick\skplus^cls
+SYN sl			c:\fastwire\sl
+SYN slave		sl
+SYN sort			sortf %1 %2 %3 %4 /C /Q
+SYN spooler		c:\pckwik\pckspl
+SYN t				smooth %1 /S9
+SYN tap			'uvCourier^c:^cd\tapcis^mark^taptool^menu tap^!tapcis %1^atr *.msg -a^release^&N:^cd &P^uv /l'
+SYN tapmark		hangup^!tapmark snt c=23,113,79,32^exit
+SYN test			testLL3
+SYN testLL3		ll3^cd test^C:\system\exe\sci %1 %2^&N:^cd &P^e
+rem SYN toce		l:^upd a:\src from @src.lst -f^upd a:\inc from inc -f^upd a:\sound from sound -f
+rem SYN toce2		l:^upd a:\pic from pic -f^upd a:\view from view -f
+SYN touch		'touch %1 /c'
+SYN unlock		L:^atr $$$*.* -rs^del $$$*.*
+SYN update		L:^upd a:src from @src.lst -f^upd a:inc from inc -f
+SYN uv			c:\uv\uv %1 %2
+SYN uvCourier	uv 80x25^uv courier^c:\uv\uvcolors ultra
+SYN v				v:^ve %2 view.%1^&N:^cd &P^e
+SYN wf			e^mark^c:\dv\loadhi c:\wordfind\wf.exe C:\wordfind
+SYN word			c:^cd\ms_word
+SYN wp			c:^cd\ms_word\doc^..\word %1 %2 %3
+SYN x				runLL

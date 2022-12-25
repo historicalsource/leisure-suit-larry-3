@@ -1,0 +1,329 @@
+std.hlp
+     IBM PC or COMPATIBLE INTERNAL SPEAKER
+
+The IBM PC or compatible is capable of producing
+monophonic sound when used with your Sierra game.
+
+Volume control is not available if this option is
+selected.
+
+
+jr.hlp
+         TANDY 1000 SERIES or IBM PCjr
+
+These Tandy 1000 computers and the IBM PCjr are
+capable of playing three simultaneous instrument
+ tones.  This feature is available on all Tandy
+ 1000 EX, HX, LX, SX, and TX series computers.
+
+
+tandy.hlp
+         TANDY 1000 SL, TL, HL SERIES
+
+   These Tandy 1000 computers are capable of
+recording and playing back digital sound samples
+ in addition to three simultaneous instrument
+  tones.  However, due to computer hardware
+limitations, joystick control is not available
+        when sampled sounds are played.
+
+
+tandy.inf
+   TANDY 1000 SL, TL, HL SERIES OPERATION NOTES
+
+          ATTENTION JOYSTICK PLAYERS:
+
+These computers are capable of producing realistic
+ sampled sound effects.  However, due to computer
+  hardware limitations, joystick control is not
+    available when these sounds are played.
+
+If you wish full joystick control, hit <esc> and
+select:
+        "TANDY 1000 SERIES or IBM PCjr"
+
+
+cms.hlp
+   CREATIVE MUSIC SYSTEM or GAME BLASTER CARD
+
+  The C/MS or Game Blaster synthesizer card is
+  capable of producing 12 simultaneous voices.
+Volume control must be manually adjusted on the 
+               back of the card.
+
+Check with your local computer software/hardware
+  dealer for the availability of the C/MS card.
+
+
+sndblast.hlp
+       CREATIVE LABS SOUND BLASTER CARD
+
+     The Sound Blaster card is capable of
+ producing 23 simultaneous voices plus realistic
+            sampled sound effects. 
+
+Check with your local computer software/hardware
+      dealer for the availability of the 
+             Sound Blaster card.
+
+
+adl.hlp
+         ADLIB MUSIC SYNTHESIZER CARD
+
+   The AdLib Music Synthesizer Card is capable
+   of producing 11 simultaneous voices.  These
+  voices are created using frequency modulation
+    (FM) and can reproduce both melodic and
+            percussive instruments.
+
+ Contact Sierra On-Line to order the AdLib Music
+   Synthesizer Card.  Also available is AdLib's
+   Visual Composer program which allows you to
+   compose, edit, and playback your own songs.
+
+
+imf.hlp
+         IBM PC MUSIC FEATURE CARD
+
+  The IBM PC Music Feature is an eight-voice
+  polyphonic tone generator card that employs
+ frequency modulation (FM) to create 240 preset
+ voices and 96 user-programmable voices.  This
+        card is also MIDI compatible.
+
+  The IBM PC Music Feature is available from
+           authorized IBM dealers.
+
+
+fb01.hlp
+        YAMAHA FB-01 FM SOUND GENERATOR
+
+  The Yamaha FB-01 is an eight-voice polyphonic
+ tone generator that employs frequency modulation 
+     (FM) to create 240 preset voices and 96 
+           user-programmable voices.  
+      This module is also MIDI compatible.
+
+Also required is a MIDI computer interface (such
+as the MPU-IPC) and an external amplifier/speaker
+ (such as your home stereo) in order to use the
+ FB-01 with your Sierra game.  The FB-01 can be
+ used with any MIDI compatible keyboard and is
+        available from music retailers.
+
+
+fb01.inf
+         YAMAHA FB-01 OPERATION NOTES
+
+Before running your Sierra game, be sure to always
+complete the following procedure:
+
+1.  Make sure the FB-01 is connected to your MIDI
+    computer interface and an external amplifer
+    or stereo system.
+2.  Turn the FB-01 power switch to ON.
+3.  SET THE FB-01 MEMORY PROTECT TO OFF.
+4.  Set your amplifer or stereo volume to a
+    moderate listening level.
+
+
+mt540.hlp
+          CASIOTONE MT-540 OR CT-460
+
+These Casio polyphonic synthesizers are capable of
+playing 20 different preset sounds in addition to
+49 rhythm instruments.  Also included are built-in
+  stereo effects, an auto-accompaniment function,
+          and a 1250 note sequencer.
+
+ Also required is a MIDI computer interface (such
+ as the MPU-IPC) in order to use the MT-540/CT-460
+            with your Sierra game.
+
+
+mt540.inf
+     CASIOTONE MT-540 OR CT-460 OPERATION NOTES
+
+    Before running your Sierra game, be sure to
+    always complete the following procedure:
+
+1.  Make sure the MT-540 or CT-460 is connected to
+    your MIDI computer interface.
+2.  Turn the MT-540/CT-460 POWER switch to ON.
+3.  Switch the CHORD/MIDI selector to MIDI.
+4.  Press the CH4 pad.
+5.  Set both the ACCOMP VOLUME and SOUND EFFECT
+    VOLUME slider to maximum level.
+6.  Set the MAIN VOLUME slider to a moderate level
+
+
+csm1.hlp
+        CASIO CSM-1 DIGITAL SOUND MODULE
+
+ This Casio polyphonic synthesizer is capable of
+playing 30 different preset sounds in addition to
+             49 rhythm instruments.
+
+ Also required is a MIDI computer interface (such
+    as the MPU-IPC) in order to use the CSM-1
+             with your Sierra game.
+
+
+csm1.inf
+          CASIO CSM-1 OPERATION NOTES
+
+    Before running your Sierra game, be sure to
+    always complete the following procedure:
+
+1.  Make sure the CSM-1 is connected to your
+    MIDI computer interface.
+2.  Turn the CSM-1 POWER switch to ON.
+3.  Press the MIDI CH4 button.
+4.  Set the CH1, CH2, and CH3 volume sliders to
+    maximum level.
+6.  Set the MAIN VOLUME slider to a moderate level
+
+
+mt32.hlp
+ ROLAND MT-32, MT-100, LAPC-1, CM-32L, or CM-64 
+
+  These Roland MIDI sound modules are capable
+ of playing eight separate synthesizer parts in
+    addition to 30 different rhythm sounds.  
+
+Also required is a MIDI computer interface (such
+as the MPU-IPC) and an external amplifier/speaker
+ (such as your home stereo) in order to use the
+modules with your Sierra game.  NOTE:  The LAPC-1 
+     card does not require a MIDI interface.
+
+ Contact Sierra On-Line to order your Roland PC
+            Desktop Music Studio.
+
+mt32.inf
+     ROLAND MT-32, MT-100, CM-32L, or CM-64
+                OPERATION NOTES
+
+Before running your Sierra game, be sure to always
+complete the following procedure:
+
+1.  Make sure the module is connected to your MIDI
+    computer interface and an external amplifer
+    or stereo system.
+2.  Turn the power switch to ON.
+3.  Set your amplifer or stereo volume to a
+    moderate listening level.
+
+
+cga320bw.hlp
+This combination works with an IBM Color
+Graphics Adaptor and an RGB OR
+COMPOSITE monitor. It will produce black
+and white images, with various dot patterns
+used to simulate color.
+       See also CGA 4 color.
+
+
+cga320c.hlp
+This combination works with an IBM Color
+Graphics Adaptor and an RGB OR
+COMPOSITE monitor. It will produce four
+color images, with various combinations
+used to simulate 16 colors.
+       See also CGA 2 color.
+
+
+mcga320.hlp
+This combination should be selected for use
+on an IBM PS/2 Model 25 or Model 30, OR any
+computer that supports the MCGA standard. If
+you have a newer IBM PS/2 Model 30/286, you may
+realize a slight speed increase if you select
+the EGA/VGA with RGB option.
+
+
+hercmono.hlp
+This combination will work with the Hercules
+Monochrome Graphics Adaptor (or compatible) 
+and a monochrome monitor.  It uses various 
+patterns to produce 16 shades of gray.
+
+
+pcjr320.hlp
+This combination works with the built-in video
+circuitry of an IBM PC jr. You should configure
+your system with no memory resident utilities.
+See the box label for special memory requirements
+for the PC jr.
+
+
+ 
+ega320.hlp
+This combination works with any adaptor that
+claims CHIP LEVEL compatibility with an IBM
+Enhanced Graphics Adaptor. You do NOT need an
+EGA monitor. Any monitor compatible with an
+IBM Color Display will work.
+
+
+tandy320.hlp
+This combination works with the built-in video
+circuitry of a TANDY 1000 series computer.
+If you have installed an additional graphics 
+adaptor in your system, you may select that 
+adaptor instead, but you must ensure that your
+monitor is connected to the correct plug.
+
+
+joystick.hlp
+If you answer YES to this question, you MUST have
+an IBM compatible joystick attached to PORT 1
+of your GAME CONTROL ADAPTOR at all times while
+playing the game.
+Before you start your game, be sure that the
+JOYSTICK control is CENTERED. If it is not, you
+may experience difficulties controlling your
+player.
+
+Answer NO if you do not have a joystick, or do
+not wish to use one.
+
+
+
+tandykbd.hlp
+Select this keyboard if you have an original
+TANDY 1000 keyboard. It will allow TANDY 1000
+owners to control their character with the
+numeric keypad. Certain later model TANDY 1000s
+come equipped with an IBM compatible key layout,
+and these owners should select the IBM Compatible
+Keyboard.
+The original TANDY 1000 series keyboard uses a
+key layout that differs significantly from the
+IBM standard. This keyboard can be identified
+by the location of the CAPS LOCK key in the
+LOWER/LEFT corner of the keyboard.
+
+tandykbd.inf
+Make certain that NUMLOCK is ON if you wish to
+use your numeric keypad to control your character.
+
+
+ibmkbd.hlp
+Select this keyboard if you have any of the many
+IBM compatible key layouts. You will be able to
+control your character using the numeric keypad.
+
+ibmkbd.inf
+Make certain that NUMLOCK is OFF if you wish to
+use your numeric keypad to control your character.
+
+
+mouse.hlp
+This program supports any mouse that is supplied
+with a MicroSoft compatible driver. The mouse
+driver must be installed before starting the game.
+If you have a mouse, but do not wish to use it,
+select NO in response to this item.
+
+

@@ -1,0 +1,22 @@
+;**
+;**	To Do List for:
+;**
+;**	LSL3:  Passionate Patti in Pursuit of the Pulsating Pectorals
+;**
+;**	Last Update:	January 22, 1990
+;**
+
+
+
+sample code from GAME.SC:
+			(if (or	(not useSortedFeatures)
+						(!= (event type) saidEvent)))
+				(or
+					(regions handleEvent: event)
+					(locales handleEvent: event)
+				)
+			)
+
+
+
+BUGS TO FIX:

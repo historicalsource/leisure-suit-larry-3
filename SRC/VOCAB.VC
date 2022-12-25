@@ -1,0 +1,637 @@
+;**
+;**	Vocabulary List
+;**
+;**	LSL3:  Passionate Patti in Pursuit of the Pulsating Pectorals
+;**	       Copyright 1989
+;**		by Al Lowe, Bill Skirvin, Carlos Escobar, and Roger Hardy
+;**
+;**	Last Update:	December 28, 1989
+;**
+
+
+(#adj	#NUMBER 500
+
+	(#noun	
+		white
+		black	
+		green	
+		gold	
+		silver	
+		orange
+	)
+	
+	blue		
+	pink		
+	purple	
+	brown	
+	yellow	
+	golden	
+	red		
+	grey		
+	gray		
+	careful
+
+	((#verb dressing ) )
+	(big large huge (#noun giant ) )
+	(small little tiny )
+	(pretty cute gorgeous beautiful lovely young sexy )
+	((#noun blonde blond ) )
+	(sleazy funky bad )
+
+	same 	
+	different 
+	every 
+	other 
+	another 
+	used 
+	old 
+	new 
+	more 
+	less
+	leisure 
+	tan
+	brunette
+	hot
+	cold
+	long
+	short
+	good 
+	whole 
+	plastic 
+	expensive
+	cheap
+	left
+	right
+	next
+	first
+	last
+	main 
+
+	sharp
+	(#noun magic spell voodoo )
+	tropical 
+	erotic
+  	comedy
+	membership
+	dont
+	bronze
+	feral
+	some
+	safety 
+	marking
+	dumb
+	bulletin
+	feather
+	feathered
+	my
+	your
+	fat
+	bodacious
+	passionate
+	nextAdjective
+	
+
+	;**	X-rated adjectives:
+	fucking 
+	sucking 
+
+)
+
+
+
+(#verb	#NUMBER	1000
+	
+	;**	Menu commands:
+
+	restart
+	restore
+	save
+	(assist (#noun help aid ) hint ) 
+	(wait pause delay )
+	speed 
+	(quit done )
+
+
+	;**	Debug verbs:
+	tp		
+	debug
+	control
+	visual
+	pitch
+	praise 
+	test 
+	clear
+	toggle
+	flag
+	((#noun station position pos ) )
+	(priority pri )
+	forceatest 
+	(write draw )
+
+
+	;**	X-rated verbs:
+	
+	pinch 
+	grab
+	(masturbate jack  )
+	(rub stroke pat pet touch feel caress fondle )
+	((#noun kiss hug embrace ) )
+	((#noun fuck screw hump lay ) seduce copulate mount bang )
+	(#noun
+		(shit crap dump defecate )
+		(piss pee urinate leak )
+		come	
+		fart
+	)
+	
+
+	;**	Normal verbs:
+
+	(let lets )
+	wear 
+	(swim swimming )
+	wade
+	open
+	knock
+	(ask file )
+	cheat 
+	fill 
+	return
+	deposit
+	count 
+	flush
+	(#noun blow )
+	sing 
+	whistle
+	laugh 
+	wake
+	climb
+	crawl 
+	secure
+	run 
+	hang 
+	make 
+	(workout exercise class )
+	work
+
+	(look read examine inspect observe see stare 
+		(#noun display view ) )
+	(#noun show )
+	(listen hear )
+	((#noun smell ) sniff )
+	(breathe inhale )
+	(get want take acquire gather catch capture )
+	pick
+	(put (#noun drop release set backdrop place ) stash hide conceal discard insert (#noun stick) )
+	(sit rest sleep lie )
+	(rise (#noun stand nightstand nighttable ) )
+	(hold grip grasp )
+	(rob swipe steal )
+	(vomit barf )
+	((#noun hello hi ) )
+	(goodbye bye )
+	(talk speak converse (#noun address ) )
+	(break destroy damage smash shatter tear rip )
+	((#noun call phone telephone ) )
+	((#noun lock keyhole latch bolt ) )
+	(unlock unlatch unbolt )
+	(close shut )
+	(buy spend (#noun purchase request order pay ) )
+	(give offer )
+	(search explore )
+	(hit kill murder attack kick strike 
+		punch slap fight beat hurt pound stab )
+	(play gamble )
+	(push (#noun pull drag jerk roll ) press shove shake move turn replace )
+	(like (#noun love ) enjoy )
+	(remove (#noun empty grate drain ) serve pour )
+	(eat consume taste swallow round lick suck bite chew )
+	feed
+	(enter (#noun board ride ) )
+	(undress strip unclothe (#noun naked nude ) )
+	((#noun cut slice ) sever carve )
+	(exit leave (#noun walk ) )		
+	(untie unfasten )
+	(tie fasten attach )
+	(jump leap )
+	(raise lift increase )
+	(lower decrease )
+	(clean wash )
+	rinse
+	(thank thanks )
+	(heckle boo hiss )
+	(clap applaud cheer )
+	(flirt wink )
+	(wipe dry )
+	(toss (#noun cast spread sling ) throw hurl swing flip shoot )
+
+	(#noun fly )
+	(#noun dial )
+	(#noun dance )
+	(#noun drink )
+	(#noun sip )
+	(#noun tip bribe )
+	(#noun surface )
+  	sharpen
+	weave
+	smoke
+	tickle
+	cancel 
+	sell
+	(sunbath sunbathe )
+	((#noun harness brace belt ) )
+	adjust
+	((#noun curl curls ) )
+	(pullup pullups )
+	(#noun shampoo )
+	(unplug disconnect )
+	cross
+	qa
+	(bend stretch )
+	borrow
+	(marry propose wed )
+	shopping
+	(register registered rent join enroll )
+	(find locate )
+	ascot
+	nextVerb
+
+)
+
+
+;**************************************************************************
+(#noun #NUMBER 2000
+	
+	;**	Menu nouns:
+	(inventory inven inv status stuff item object thing everything junk all belonging sundries )
+	game 
+
+
+	;**	Debug nouns:
+
+	frag 
+	cache
+	memory 
+	grid 
+	note
+	timer
+
+	
+	;**	LL3 objects:
+
+	card 
+	(knife ginsu )
+	(wood granadilla grenadilla)
+	(sculpture carving statue )
+	(grass blade )
+	skirt 
+	(soap soaponarope )
+	(ticket pass )
+	(ones 500 )
+	deed 
+	towel 
+	keycard 
+	(divorce decree )
+	(orchid flower )
+	lei 
+	key 
+	(wine champagne beer whiskey whisky shot booze 
+		rum rye scotch liquor bourbon gin vodka cola soda coke pop )
+	(underwear underpants tail panties panty pants )
+	(bra brassiere )
+	(pantyhose hose stockings nylons )
+	(clothes clothing cloth suit garment pocket outfit costume coat jacket )
+	((#verb dress ) gown robe dressed )
+	(marker pen )
+	bottle	
+	water 
+	faucet
+	tips 
+	43
+	(jar snifter )
+	(coconut nut )
+	(marijuana pot dope drug joint reefer )
+	(hemp (#verb rope lasso ) )
+	(part piece )
+
+
+	;**	LL3 nouns:
+	(spa club tub )
+	(garbage trash barrel litter refuse bin rubbish )
+	(hut shack )
+	(bird parrot seagull gull )
+	(basin (#verb sink ) )
+	(fire flame campfire fireplace )
+	(camp village town city )
+	(landing balcony)
+	(telescope binocular)
+	studio
+	(video tape videotape )
+	(microphone mike )
+	(tv television monitor camera )
+	(knob channel )
+	(music sound song record tune )
+
+	(bambi teacher jock )
+	(suzi cheatum cheatem lawyer attorney )
+	(tawni shopper maller mallhead )
+	(mall center )
+	(cherri cheri showgirl tart )
+	(patti pianist entertainer player )
+	(dale dancer stripper )
+	chip
+
+	fountain
+	(shoe sandal zory thong )
+	(letter mail )
+	(box mailbox )
+	fence
+	(urn finial )
+	shade
+   office
+ 	pencil
+
+	;**	Common LSL words:
+
+	sierra 
+	lefty 
+	faith 
+	fawn 
+	hooker 
+	(#verb spray )
+	lint 
+	(#verb watch )
+	eve 
+	onklunk 
+	(kalalau wife exwife )
+	(chief keneewauwau leader chairman ken kenneth )
+	(sunscreen screen lotion )
+	(river stream current creek )
+	self 
+	larry 
+	(traffic street car auto automobile )
+	(taxi cab taxicab )
+
+
+
+	;**	X-rated nouns:
+	
+	hell 
+	heck 
+	(lord christ god )
+	(dam damn damm )
+	(bathroom shithouse cabana restroom lavatory john toilet potty throne urinal )
+	(rubber condom prophylactic lubber protection sheath )
+	(penis dick cock crotch prick dong ball bone )
+	(ass butt rearend rear )
+	(fucker motherfucker cocksucker asshole dickhead shithead 
+		bullshit fag faggot cunnilingus )
+	(tit breast bust boob knocker nipple )
+	(cunt pussy crack fur snatch slit clit clitoris sex )
+
+
+	;**	Normal nouns:
+
+	(woman female lady girl chick slut broad bimbo bitch dike fox babe dyke )
+	(man male guy boy bum dude secretary bloke vendor peddler receptionist )
+	(doorman bouncer manager maitre d maitred )
+	(people person couple customer patron )
+	(hotel motel resort )
+	(house home building business store shop )
+	(drawer furniture dresser bureau trunk chest )
+	(closet cabinet )
+	(door doorway gate )
+	(window pane glass cup )
+	(ceiling roof )
+	(floor ground lawn pavement sidewalk concrete cement earth rug carpet mat mud dirt soil dust path trail )
+	(money cash dough currency buck dollar )
+	(wallet billfold coins )
+	(bill skirvin tab )
+	(waterfall fall cascade rapid )
+	(beach sand sunaffa )
+	((#verb paint ) picture map photo photograph poster art artwork painting )
+	(boat (#verb ship ) )
+	(lever handle (#verb switch ) )
+	(chasm canyon gorge crevice fissure valley )
+	(shelf rack globe bookcase )
+	(stair staircase stairway (#verb step ) )
+	(mountain volcano cliff hill )
+	(sky sunset (#verb sun cloud air ) atmosphere )
+	(mouth teeth lip smile )
+	((#verb tongue dicklicker) )
+
+	((#verb change alter ) )
+	(whale (#verb fish ) )
+	(#verb guard )
+
+	head 
+	wall
+	(island nontoonyt tonite tonight )
+	(shirt blouse )
+	glasses
+	secret
+	present 
+	bikini
+	top
+	bottom
+	body
+	(curtain drapes )
+	edge 
+	side
+	breath 
+	ledge 
+	((#verb shower bathe bath ) )
+	((#verb spit expectorate ) )
+
+	(room park area scene vicinity bedroom lounge lobby )
+	(chair seat bench stool barstool sofa couch )
+	(book magazine manual guide doco documentation )
+	name
+	(number numeral )
+	corner 
+	(suntan tanning booth )
+	(sign awning plaque medallion )
+	(blackboard menu )
+	(clerk waiter waitress bartender attendant )
+	(bar saloon )
+	(paper newspaper document )
+	(table counter buffet desk )
+	(id identification )
+	button
+	elevator
+	envelope
+	entrance
+	walkway
+	((#verb rock stone ) boulder cave )
+	arch
+	ego
+	bed
+	sheet
+	tray
+	(lite (#verb light ignite burn ) lamp panel skylight spotlight )
+	(sea ocean bay lagoon (#verb surf wave ) )
+	(bush (#verb plant ) weed shrub vegetation foliage 
+		planter jungle farm forest woods landscape landscaping vine frond leaf leaves )
+	(branch limb )
+	(tree palm )
+	(match matches matchbook )
+	(hole knothole opening slot )
+	(leg thigh calf )
+	(hand wrist finger bracelet )
+	(eye (#verb face ) mascara )
+	cheek
+	(nose nostril )
+	(tiger skin tigerskin )
+	(ear jewelry necklace earring )
+	hair
+	maze
+	(bamboo leather )
+	stalk
+	(comic comedian paul )
+	(native doctor cannibal witch )
+	((#verb sweat perspiration perspire ) )
+	(sweats sweatpants sweatsuit sweatshirt )
+	locker 
+	combination
+	credit
+	plot
+	deodorant
+	(lizard snake reptile )
+	crab
+	nail
+	point
+	vista
+	(rail railing )
+	(showroom theatre backstage stage )
+	casino
+	(bob drum drummer )
+	(al lowe )
+	(dave david )
+	carlos 
+	cigarette
+	nothing
+	(zax graffiti clovis )
+	penthouse
+	gambler
+	mirror
+	trap
+	joke
+	(foot feet ankle toe )
+	(piano keyboard organ )
+	(post pillar column )
+	lid
+	(pig hog beast swine animal )
+	land
+	(fax machine generator equipment )
+	(computer terminal pc )
+	(podium lectern )
+	log
+	(elvis king)
+	hat
+	prop
+	color
+	(#verb date )
+	(roberta williams berta bert )
+	(plug cord wire cable )
+	(bell weight dumbbell )
+	aerobic 
+	weather
+	job
+	announcement
+	(cage cell )
+	cauldron	
+	flat
+	(fee cost charge )
+	(69 sixtynine )
+	(appointment consultation meeting )
+	dowry
+	(neck shoulder )
+	(wedding marriage proposal )
+	special
+	milk
+	knot
+	spout
+	souvenir
+	(beard moustache )
+	health
+	arnold
+	robin
+	blender
+	mask
+	sunglass
+	(tombstone gravestone headstone )
+	(roger hardy )
+	gambling
+	nectarine
+	nextNoun
+
+)
+
+
+
+;**	This is a place marker so overflow errors get flagged.
+
+(#NUMBER 3999 )
+
+
+
+;**  This is any number that is not defined as a vocab word:
+;(4093 anyNumber			noun )
+
+;**  This word means match only no word:  'look/!*' only true if "look"
+;(4094 !*						 )
+;(4094 !						 )
+;(4094 noword				 )
+
+;**  This word matches all words:  (but why bother? )
+;(4095 * 						noun verb adj art adv conj pos pron )
+;(4095 anyword				noun verb adj art adv conj pos pron )
+
+
+
+
+
+
+
+
+
+;**	Pablo:  what are these?
+
+
+;(0281 either				conj )
+;(0282 neither				conj )
+;(0165 both					adj )
+;(3047 again					adj )
+
+
+;**	How do I build these constructs?
+
+;(2002 'piece of ass'		noun )
+;(2002 'piece of tail'	noun )
+
+;(2005 'sleep with'		verb )
+;(2005 'make love'			verb )		
+;(2005 'jump her bones'	verb )
+;(2005 'mount up'			verb )
+;(2005 'have sex'			verb )
+
+;(2006 'cut one'			noun )
+
+;(2007 'mother fucker'	noun )
+;(2007 'cock sucker'		noun )
+;(2007 'dick head'			noun )
+;(2007 'what the fuck'	noun )
+;(2007 'blow job'			noun )
+;(2007 'suck me'			noun )
+
+;(2011 'dam it'				noun )
+;(2011 'damn it'			noun )
+;(2011 'go to hell'		noun )
+;(2011 'bull shit'			noun )
+;(2011 'sit on it'			noun )
+;(2011 'up your'			noun )
+;(2011 'up yours'			noun )
+;(2011 'fuck off'			noun )
+;(2011 'fuck you'			noun )
+;(2011 'jesus christ'		noun )
+

@@ -1,0 +1,369 @@
+
+
+;	VOCABASE.TXT:	Basic word dictionary file
+;  -----------------------------------------
+;
+;	for	Sierra On-line, 12/16/88
+;			source file Vocabase.vc converted to new syntax 1/3/89
+;
+;	by		Pablo Ghenis, Parsemaster extraordinaire.
+;
+;
+;	Special mention goes to Robert Fischbach for blazing the trail with the  
+;	first sanely organized (!?) vocabulary file in Sierra On-line's history
+;
+;
+;	Parts of speech recognized are:
+;
+;		ARTicle
+;		CONJunction
+;		PRONoun
+;		ASSociative preposition
+;		POSitional preposition
+;		ADVerb
+;		AUXVerb
+;
+;		ADJective
+;		VERB
+;		NOUN
+;
+;	Word numbers 1 to 999 are reserved for "system level" words, namely those 
+;	of the first seven classes above. Please do not modify this area, if a 
+;	word or part of speech is missing for any of these words let ME know and 
+;	I will add it ASAP; that way others may also benefit from the update.
+;	
+;	Word numbers 4000 to 4095 are reserved for system hooks and kludges, If 
+;	you dare to use these your actors will forever stutter and your 
+;	lexical karma will never be the same.
+;	
+;	This leaves word numbers 500 to 3999 for ADJectives, VERBS and NOUNS, which
+;	is all you should HAVE to define for your game. My recommendation is to 
+;	allocate those numbers as follows:
+;
+;	 500- 999	ADJectives
+;	1000-1999	VERBs
+;	2000-3999	NOUNs
+;
+;
+;	Formatting suggestion if not already using the vocab preprocessor:
+;	newlines are cheap, leave a blank line between distinct words,
+;	cluster only synonyms
+;	
+;	
+;***************************************************************************
+;
+;	DIRECTORY:
+;
+;		ART				1+
+;		CONJ				50+
+;		PRON				100+
+;		ASS				150+
+;		POS				200+
+;		ADV				300+
+;		AUXV				400+
+;
+;		system			4000+
+;		end of world	4095
+;
+;	recommended for user file:
+;
+;		ADJ				500+
+;		VERBS				1000+
+;		NOUNS				2000+
+;
+;***************************************************************************
+;***************************************************************************
+;
+;	ART(icles)
+;	**********
+
+(#art	#NUMBER 1
+	
+	the
+	a
+	an
+	
+	;some spanish articles for Leisure Suit Larry
+	;--------------------------------------------
+	
+	el
+	la
+	los
+	
+);#art
+
+;***************************************************************************
+;
+;	CONJ(unctions)
+;	**************
+
+(#conj	#NUMBER 50
+	
+	and
+	or
+	nor
+	++		;of
+	if
+	but
+	
+);#conj
+;***************************************************************************
+;
+;	proNOUNs:	any of these will get translated to the root of the last 
+;	********		previous sentence's direct object
+
+
+
+(#pron	#NUMBER 100
+
+	it		
+	this	
+	these	
+	that	
+	those	
+	them	
+	themselves
+	him	
+	himself
+	her
+	herself
+	
+);#pron
+
+	;;we really use the following pronouns as nouns sooo...
+	
+(#noun
+	
+	(#synonyms	I	me		myself)
+	he		
+	she	
+	they	
+	(#synonyms	you	ya)	
+	yourself
+	we		
+	us		
+	ourselves
+	
+);#noun
+
+;***************************************************************************
+;
+;	ASS(ociative prepositions)
+;	**************************
+
+(#ass	#NUMBER 150
+
+	until
+	while
+	with
+	without
+	for
+	about
+	
+);#ass
+
+;***************************************************************************
+;
+;	POS(itional prepositions)
+;	**************************
+
+(#pos	#NUMBER 200
+
+	to			;changed from #ass by Pablo 9/4/89
+	from
+	
+	at
+	(on upon)
+	onto
+	off
+	(in	into	inside)
+	(out	outer	outside)
+	(under	underneath	below	beneath)
+	between
+	across
+	(over	above)
+	through
+	(#noun behind)
+	ahead
+	(#noun #verb	back)
+	front
+	around
+	here
+	there
+	everywhere
+	nowhere
+	somewhere
+	forward
+	backward
+	toward
+	by
+	near
+	far
+	
+	of
+	
+);#pos
+
+;***************************************************************************
+;
+;	ADV(erbs)
+;	*********
+
+(#adv	#NUMBER 300
+
+	how
+	where
+	when
+	why
+	what
+	who
+	soon
+	sooner
+	soonest
+	now
+	late
+	later
+	latest
+	(#synonyms	fast	quickly	quick	speedy)
+	(#synonyms	slow	slowly	sluggishly)
+	normal
+	(#synonyms	abnormal	strange)
+	so
+	again
+	always
+	never
+	then
+	up
+	down
+	together
+	please
+	away
+	along
+	overboard
+	not
+	almost
+	(#synonyms	yes	y	ok	affirmative	sure certainly aye yep)
+	(#synonyms	no	n negative nay nope)
+	(#synonyms	maybe dunno possibly probably)
+	
+);#adv
+
+;***************************************************************************
+;
+;	AUXV(erbs)
+;	**********
+
+(#auxv	#NUMBER 400
+
+	;to do or not to do much ado about nothing...)
+	do
+	did
+	(#noun	does)
+	;----------------------
+	
+	;to be or not to be...
+	be
+	(is are youre wheres)
+	(am Im)	;Im=I'm
+	++					; Removed "are" to make it a synonym for "is"
+	was
+	;----------------------
+	(#noun	can)
+	(#noun	will)
+	would
+	go
+	(stop	cease)
+	(start	begin)
+	
+	;say what!??
+	say
+	says
+	said
+	;----------------------
+	
+	;let em have it
+	have
+	has
+	had
+	;----------------------
+	
+	tell		;tell man to break window		-> break<tell<man<to/window
+	use		;USE wire to CONNECT circuit	-> connect<use<wire<to/circuit
+	
+	(shout yell scream holler)
+	
+);#auxv
+
+
+;***************************************************************************
+;
+;	System-level	hacks
+;	******************
+
+;These numbers MUST be present to work around an obscure bug in findWord:
+;
+
+(#NUMBER 4000	#noun
+
+	(#synonyms	0	zero	o)
+	(#synonyms	1	one)
+	(#synonyms	2	two)
+	(#synonyms	3	three)
+	(#synonyms	4	four)
+	(#synonyms	5	five)
+	(#synonyms	6	six)
+	(#synonyms	7	seven)
+	(#synonyms	8	eight)
+	(#synonyms	9	nine)
+	
+	(#synonyms	10	ten)
+	
+	(#synonyms	11	eleven)
+	(#synonyms	12	twelve)
+	(#synonyms	13	thirteen)
+	(#synonyms	14	forteen fourteen)
+	(#synonyms	15	fifteen)
+	(#synonyms	16	sixteen)
+	(#synonyms	17	seventeen)
+	(#synonyms	18	eighteen)
+	(#synonyms	19	nineteen ninteen)
+	
+	(#synonyms	20	twenty)
+	(#synonyms	30	thirty)
+	(#synonyms	40	forty)
+	(#synonyms	50	fifty)
+	(#synonyms	60	sixty)
+	(#synonyms	70	seventy)
+	(#synonyms	80	eighty)
+	(#synonyms	90	ninety)
+	
+	(#synonyms	100	hundred)
+	(#synonyms	1000	thousand)
+	(#synonyms	1000000	million)
+	
+	
+);#NUMBER 4000
+
+;Here come the hacks from the deep!
+
+(#NUMBER 4093
+
+	;4093		Any number not explicitly in the vocabulary:
+	;			hard-coded into interpreter)
+	;
+	(#noun unknownNumber)
+	
+	;4094		Nothing a user would type could match this word:
+	;			hard-coded into interpreter)
+	;
+	(#synonyms	!*	NOWORD)
+	
+	;4095		Anything will match this word:
+	;			hard-coded into interpreter)
+	;
+	(#synonyms
+		#noun	#verb	#adj	#pos	#conj	#art	#adv	#auxv	#pron
+		*	ANY	ANYWORD
+	)
+)
+;************************ END OF BASE VOCABULARY ***************************

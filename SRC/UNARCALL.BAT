@@ -1,0 +1,15 @@
+pkunzip a:SRC c:\ll3\
+pkunzip a:INC c:\ll3\INC\
+pkunzip a:PIC c:\ll3\PIC\
+pkunzip a:QA c:\ll3\QA\
+pkunzip a:SCRIPT c:\ll3\SCRIPT\
+pkunzip a:SEQ c:\ll3\SEQ\
+pkunzip a:SOUND c:\ll3\SOUND\
+pkunzip a:TEST c:\ll3\TEST\
+pkunzip a:VIEW c:\ll3\VIEW\
+pkunzip a:VOLS c:\ll3\VOLS\
+pkunzip a:DEMO c:\ll3\VOLS\DEMO\*.
+pkunzip a:360 c:\ll3\VOLS\360\*.
+pkunzip a:720 c:\ll3\VOLS\720\*.
+pkunzip a:system c:\system\
+pkunzip a:exe c:\system\exe\

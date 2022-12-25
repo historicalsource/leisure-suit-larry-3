@@ -1,0 +1,14 @@
+rm540 killing pig
+			(UdidIt
+				(Print "You did it, Patti!
+					Your 36C bolas has done its duty." HIGH)
+				(NormalEgo facingNorth)
+				(Print "(But have you noticed how you're running dangerously
+					low on clothing?)" LOW)
+				(music	  
+					number		sJungleRegion,
+					loop			bgMusicLoops,
+					play,
+				)
+				(theGame changeScore 100)
+

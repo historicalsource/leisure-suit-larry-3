@@ -1,0 +1,3 @@
+The Fastback folder contains the data files created by Fastback, a long-defunct backup program. BUT, it appears that I stored a copy of the working program on the 4th disk so I copied all of those files into the folder as well. 
+
+I think you run "Fastback" or "FB" and it just might restore the 3 big data files to your hard drive--probably into C:\LL2 (but then again, it has been nearly 20 years! <grin>).

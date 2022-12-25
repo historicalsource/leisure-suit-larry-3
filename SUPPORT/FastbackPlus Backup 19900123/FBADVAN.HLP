@@ -1,0 +1,584 @@
+
+
+                  FUNCTION KEY ASSIGNMENTS:
+
+<F1>: HELP                <F2>: CURRENT SETTINGS
+<F3>: DIRECTORY           <F4>: NONE
+<F5>: NONE                <F6>: DOS
+<F7>: RECORD KEYSTROKES   <F8>: PLAYBACK KEYSTROKES
+<F9>: LOAD SETUP         <F10>: SAVE SETUP
+
+
+*H_di
+**** DIRECTORY FUNCTION ***
+ 
+Produces a list from which to select the directories and
+files you want to work with.
+
+--Move the highlight around in the list by using the keypad
+arrow keys, <PgUp>, <PgDn>, <Home>, and <End>.
+--Toggle between directory list and file list with <Tab>.
+--Use <Ins> to place a highlighted selection in the file
+specification area at the bottom of the screen.
+
+*H_se_hd
+*** HARD DISK ***
+
+Allows you to choose the letter of the hard drive to use for
+backup or restore.
+
+Press <Enter> to select Hard Disk and enter the drive letter
+in the box provided.
+
+
+
+
+
+*H_se_in
+*** INCLUDE FILES ***
+
+Lets you choose the directories and files (up to 20 entries)
+you wish to include in a backup or restore.  You can use DOS
+wildcards to enter a file or group of files.
+ 
+After selecting Include Files, 
+     --either type in the names of files and directories
+     --or press <F3> to use the "point and push" method to
+     insert names automatically.
+FASTBACK PLUS marks selected items with a triangle. Edit
+selections as necessary, using DOS naming conventions.
+
+To use the "point and push" method, 
+     Move the highlight around in a list by using the keypad
+     arrow keys, <PgUp>, <PgDn>, <Home>, and <End>.
+
+     Toggle between directory list and file list with <Tab>.
+
+     Use <Ins> to post a highlighted selection to the file   
+  selection list at the bottom of the screen.
+
+
+ DEFAULT: C:\____*.*____Y (includes all files on C:).
+ 
+
+*H_se_ex
+*** EXCLUDE FILES ***
+
+Lets you specify files (up to 20 entries) you wish to exclude
+from a backup or restore.  You can use DOS wildcards to enter
+a file or group of files.
+ 
+After selecting Exclude Files,
+     --Either type in the names of files and directories.
+     --or press <F3> to use the "point and push" method to   
+     insert names automatically.
+
+FASTBACK PLUS marks items you previously selected to Include
+with a triangle; select one of these to Exclude and the
+triangle will disappear.  You may edit your selections using
+DOS naming
+conventions.
+
+ Using the "point and push" method:
+     Move the highlight around in a list by using the keypad 
+    arrow keys, <PgUp>, <PgDn>, <Home>, and <End>.
+
+     Toggle between directory list and file list with <Tab>.
+
+     Use <Ins> to post a highlighted selection to the file   
+  selection list at the bottom of the screen.
+
+DEFAULT:  Exclude old Fastback History Report files.  (Each
+          backup set automatically includes the history
+          report for that backup.)
+ 
+*H_se_dg
+*** FILES BY DATE ***
+
+Lets you choose files to exclude based on their creation
+date.
+ 
+To use,
+--Toggle between "before" and "after" with <Tab>
+--Type in the dates you wish to apply to your backup
+--Use <Backspace>, <Del>, and the arrow keys to edit
+--Use dashes (-) or slashes (/) to separate month/day/year
+--Type "Y" or "N" at the "Use these date gates?" prompt.
+
+NOTE:  FASTBACK PLUS will interpret any date earlier than
+1-1-80 to mean September 15, 2079, and will exclude all your
+files.
+
+*H_ba_bd
+*** DESTINATION ***
+
+Specifies which floppy drive(s) or other DOS device will
+store backup information.
+
+The submenu lists the types of media your computer supports
+(based on information you provided during installation).
+Highlight the selection you want.  Then press <Enter>.  
+Default:  A: (or both A: and B: if of the same type).  
+
+*H_ba_bt
+*** BACKUP TYPE ***
+ 
+Use the arrow keys to choose which of the five kinds of
+backup you wish to make.
+
+--Full Backup:  Backs up all selected files in all
+directories of the selected hard disk. 
+
+--Incremental Backup:  Backs up all files changed since the
+last partial backup.  After completion, marks files as backed
+up.  Restoring your hard disk would require restoring the
+last full backup, which would prompt you to use subsequent
+incremental backups as well.
+
+--Differential Backup:  Backs up all files changed since the
+last full backup.  Does not mark files as backed up after
+completing the backup.  Restoring your hard disk would
+require restoring the last full backup followed by the last
+differential backup.
+
+--Separate Incremental:  Backs up all files changed since the
+last partial backup but keeps data separate from other
+backups.  To restore your hard disk, you would restore the
+last full backup and then restore all the intervening
+incremental backups.
+
+--Copy To New Computer:  Backs up all selected files without
+marking them as backed up.  Useful for transferring data to a
+different hard disk or for making a secondary backup (a
+backup of your backup).  Do not use for routine backup
+operations.
+
+Guidelines for choosing Backup Type:
+     --Use full backup once a week.
+     --Use incremental backup daily if you typically use many 
+    different files from one day to the next.
+     --Use differential backup daily if you typically use the 
+    same small group of files daily.
+     --Use separate incremental if your preference is to keep 
+    your incremental backups distinct from full the backups.
+
+
+
+*H_ba_pv
+*** PREVIEW BACKUP ***
+Provides a non-interactive list of all the files and
+directories on the selected hard disk with selected files
+marked with a triangle.
+
+A triangle before a directory- or subdirectory-name indicates
+that you have selected at least one file under that heading
+for backup.
+
+     Use keypad cursor keys to move the cursor.
+
+*H_ba_pr
+*** START BACKUP ***
+
+Select Start Backup from the main menu to invoke the Backup
+Progress screen.
+
+The Backup Progress menu offers three choices:  
+     Estimate       Start Backup        Quit
+
+Estimate tells you
+--approximate number of diskettes required for this backup
+--approximate time required.
+Start Backup begins the backup.
+Quit returns you to the main menu.
+
+Notes about the Backup Progress screen:
+     --Change diskettes when prompted.
+     --Change diskettes when prompted, even if the red light
+     is on.
+     --Changing Buffers indicators indicate normal backup
+     progress.
+     --<Esc> stops the backup.
+
+
+*H_re_rs
+*** RESTORE SOURCE ***
+
+Specify where to find data for the backup.
+     --The submenu displays choices based on the information
+     you provided during installation.
+     --Use the same name for the Source that you used for the
+     Destination in the backup you wish to restore.
+
+
+
+
+ 
+*H_re_wo
+*** WRITE OVER ***
+
+Specifies what to do if FASTBACK PLUS finds an existing file
+on the hard disk with the same name as a backup file.
+
+The submenu offers three Write Over choices:
+Never:
+FASTBACK PLUS never overwrites an existing file on the hard
+disk. (Useful when you do not want existing files on the hard
+disk changed by the restore.)
+
+Older Files Only:
+FASTBACK PLUS compares the dates of the existing file and the
+backup file and leaves the more recent file on the hard disk.
+(Useful for keeping the latest version of files if you must
+restore an incremental backup out of chronological order.)
+
+Always:
+FASTBACK PLUS always replaces the disk file with the backup
+version.
+ 
+Default:  Older Files Only.
+
+ 
+*H_re_af
+*** ARCHIVE FLAG ***
+
+Choose whether to mark restored files as backed up or not
+backed up, or to ignore the archive bit and leave it set as
+recorded in the backup set.  Highlight your choice and press
+<Enter>.
+ 
+Default:  Leave Alone.
+ 
+
+
+
+*H_re_dp
+*** DIRECTORY ***
+
+Choose whether to restore files to their original directories
+or to the default directory.
+
+The submenu offers two choices:
+Create Only If Needed:
+Restores files to their original directory and subdirectory
+paths.  Use this choice, for example, to restore a re-
+formatted hard disk so that it has the same organization it
+had in the backup set.  FASTBACK PLUS will create directories
+and subdirectories as needed.
+
+Use Default Directory:
+Restores files to the current directory on the selected hard
+disk, usually the directory from which you started FASTBACK
+PLUS.  If you started FASTBACK PLUS from the Fastback
+directory, the program will restore files to the Fastback
+directory, the default directory.)
+
+Default:  Create Only If Needed.
+ 
+*H_re_pr
+*** START RESTORE ***
+
+Choose settings from the Restore main menu.  Then choose
+Start Restore to call the sub-menu.  It offers five options:
+ Estimate  Start Restore  Get History  Compare Files  Quit
+
+Estimate:
+     Scans data in the selected history files and compares it
+     to that on the hard disk to 
+     --estimate how long the Restore will require
+     --tell you which backup sets to have ready
+     --provide other facts about the restore.
+     Using the Restore Estimate triggers a "smart" restore
+     that prompts you to insert only the disks needed.  
+Start Restore:
+     Begins the restore process and causes FASTBACK PLUS to
+     track the process and report statistics.  Screen prompts
+     tell you when to insert disks.  (Note:  You need not
+     always start with diskette (Volume) number one. You can
+     swap diskettes when the program says to, even if the
+     light is on.)
+Get History:
+     Restores the history file from the backup set onto the
+     hard disk so FASTBACK PLUS can work more efficiently
+     with it.  Insert the correct volume in the drive before
+     making this selection.
+Compare Files:
+     Compares files on the backup set(s) with those on the
+     hard disk as an integrity check.  Useful as a check
+     before reformatting the hard disk and after first-time
+     use of the program.
+Quit:
+     Exits from the Restore Progress Menu and returns to the
+     main Restore menu.
+
+
+
+*H_op_ul
+*** USER LEVEL ***
+
+YOU ARE CURRENTLY ON THE ADVANCED LEVEL.
+You may instead move to the Beginner Level or the Experienced
+Level.  Highlight your choice and press <Enter>.
+
+Beginner Level:
+     Offers fewer features and options.  Easy to use.  Offers
+     fewer chances for error.  For new computer users.
+Experienced Level:
+     Offers more features and options than Beginner Level. 
+     Easier to use than Advanced Level.  For users with some
+     computer experience.
+Advanced Level:
+     Offers the most features and options, with more
+     potential for error.  Help screens assume familiarity
+     with DOS and computer terms.  For knowledgeable computer
+     users.
+
+*H_op_in
+*** INSTALLATION ***
+
+Lets you install the software.  Specifically, you
+     --identify available floppy drives
+     --test your hardware to determine which DMA speed to use
+     --make certain hardware adjustments.
+
+
+
+
+
+*H_op_in_dd
+*** DEFINE FLOPPY DRIVES ****
+
+Select the combination that describes the floppy drives on
+your system.  For a combination not listed, choose Other.
+
+Note:
+     --Indicate physical devices, not logical devices.
+     --FASTBACK PLUS supports other DOS devices, such as tape
+     drives and external hard disks, through the Backup
+     Destination menu.
+
+
+
+*H_op_in_th
+*** TEST HARDWARE ***
+
+Tests your computer system at three different speeds to
+determine how fast your DMA chip operates.  Each test takes
+about 30 seconds.
+
+If the system passes all three, press <Esc> to return to the
+Installation menu.  If your system fails a test, reboot.
+
+
+
+
+
+*H_op_in_sd
+*** SET DMA SPEED ***
+
+After the Hardware Test, the program sets the DMA speed at
+the highest speed passed.  If you wish to, you may change to
+a lower (slower) setting.
+
+Do not set the DMA Speed faster than the one selected by the
+Hardware Test -- it could cause serious problems or loss of
+data.
+
+
+
+
+*H_vi
+*H_op_ca
+*** HISTORY REPORT ***
+
+Permits you to
+     --view or print files containing detailed statistics
+     about your backups
+     --view or print any ASCII text file
+
+The submenu offers two choices:
+--View    (Sends file to the screen)
+--Print   (Sends file to your printer; have plenty of paper.)
+Usage:
+--At the prompt, enter the filename you want.  The default is
+the most recent history file; to use a different file, type
+the name.
+--If you do not know the filename, press <F3> for a mini-
+directory of history files; type in your choice or choose by
+"point and push."  For the full directory, press <F3> again.
+
+
+
+*H_op_wv
+*** WRITE VERIFY ***
+
+To verify data, FASTBACK PLUS reads data already sent to the
+backup destination and compares it to the data on the hard
+disk to ensure data integrity.  Verifying doubles backup
+time.
+
+The sub-menu has three choices:
+--None  (Does not verify data)
+--Write (Always verifies data)
+--Format/Write (Verifies data only if FASTBACK PLUS formats
+disk)
+
+
+ 
+*H_op_bp
+*** AUDIBLE PROMPTS ***
+
+Lets you choose the sound you prefer to remind you to change
+disks.
+
+ The submenu offers four choices:
+          Off       Beep      Buzzer    Chime
+
+Default:  Beep
+
+
+
+
+*H_op_fm
+*** FORMAT MODE ***
+
+Choose whether to format backup diskettes conditionally or
+unconditionally.  The sub-menu offers two choices:
+          Only If Needed      Always Format
+--Only If Needed formats only unformatted diskettes.
+--Always Format formats every disk, even if already
+formatted.
+
+
+
+
+*H_op_cp
+*** COMPRESSION OF DATA ***
+
+Choose data-compression mode.  The sub-menu offers three
+choices:
+
+--Off:         Does not compress data.
+--Save Time:   Uses only slack processor time to compress
+               data.
+--Save Disks:  Does maximum compression, whatever time it
+               takes.
+
+*H_op_ec
+*** ERROR CORRECTION ***
+Enables or disables the FASTBACK PLUS Advanced Error
+Correction System.
+ 
+A backup disk made with error correction enabled can tolerate
+up to 13% disk-surface damage without loss of data.
+
+
+
+ 
+*H_op_dc
+*** DISPLAY COLORS ***
+
+Allows you to change screen colors to suit your preference.
+ 
+The sub-menu lists the screen elements:
+     Main Menus     Directory      Help      Errors
+Highlight the one you wish to change; press <Enter>.  A chart
+will appear showing the colors in effect.  To change colors,
+highlight your choice and press <Shift-UpArrow> or <Shift-
+DownArrow>.  Press <Enter> to record your changes and exit.
+
+
+*H_re_hi
+*** CHOOSE HISTORY FILES ***
+
+Choose between using automatic file selection and creating a
+specific list of your own.  Thus, you can select history
+files other than the default to use for a Restore.  
+     Default:  The most recent full backup plus appended
+               incremental backups.
+To choose files, 
+     --select Specific List from the submenu
+     --enter your file specifications (up to 20)
+     --or press <F3> for a directory of history files
+     --press <F3> again for a directory of all files.
+
+--Use the cursor keys to move around in the list of files.
+--<Tab> toggles between file list and directory list.
+--<Insert> posts a file to your specification list.
+
+
+
+*H_se_co
+*** USER CONFIRMATION ***
+
+Choose whether you wish to confirm entries in a Restore.
+The submenu offers three choices:
+--Off:  Program asks for no confirmation.
+--Directories Only:  Asks you to confirm each selected
+directory before restoring it.
+--Directories and Files:  Asks you to confirm each selected
+directory and file before restoring it.
+
+
+
+
+*H_op_in_mo
+*** MOUSE SENSITIVITY ***
+     Permits you to adjust the sensitivity of an attached
+     mouse to Low, Medium, or High.
+
+
+
+
+
+
+
+
+
+
+*H_op_ol
+*** OLD HISTORY REPORTS ***
+
+Choose whether to have the program save or delete history
+reports.  
+
+If you choose Delete (the default), FASTBACK PLUS deletes
+previous full, incremental and differential history files
+after you perform a full backup.
+
+
+
+
+
+
+*H_op_ba
+*** OVERWRITE DISKS WARNING ***
+
+Choose to have the program inform you of the contents of
+disks you use for backup.
+The submenu has four options:
+--Off:  Issues no warning.
+--Regular Disks:  Warns you if you insert a disk with other-
+than-backup data already recorded on it.
+--Backup Disks:  Warns you if you insert a disk with a
+previous backup recorded on it.  (Note:  After you tell the
+program to overwrite one disk in a backup set, it will
+remember that set and overwrite other disks from the same set
+without warning.)
+--Any Used Disks:  Warns you if you insert any disk with data
+already recorded on it.
+
+
+
+*H_ex
+*** QUIT ***
+
+ PURPOSE:   To exit from FASTBACK PLUS and return to DOS.
+ 
+ USAGE:     As the menu prompt suggests, simply press <Enter>
+            to exit. If you change your mind and decide not
+            to exit FASTBACK PLUS, you may choose another
+            option with the arrow (cursor) keys or the first
+            letter of the option.
+ 
+
+
